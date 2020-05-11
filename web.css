@@ -1,0 +1,102 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+.w3-content{position:relative;margin-top:0em;}
+.w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none} 
+.w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+
+.w3-content button {
+position: absolute;
+top: 32%;
+}
+
+.w3-display-right {right:0}
+.w3-display-left {left:0}
+
+html, body {
+      width: 100%;
+      height: 80%;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica", sans-serif;
+      }
+      img {
+      max-width: 100%;
+      }
+      .slider-container {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+
+       display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+      }
+      .menu {
+      position: absolute;
+      left: 0;
+      z-index: 900;
+      width: 100%;
+      bottom: 0;
+      }
+      .menu label {
+      cursor: pointer;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      border-radius: 50px;
+      margin: 0 0.2em 1em;
+      }
+      .menu label:hover,.menu label:focus {
+      background: #1c87c9;
+      }
+      .slide {
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      z-index: 10;
+      padding: 8em 1em 0;
+      background-size: cover;
+      background-position: 50% 50%;
+      transition: left 0s 0.75s;
+      }
+      [id^="slide"]:checked + .slide {
+      left: 0;
+      z-index: 100;
+      transition: left 0.65s ease-out;
+      }
+      .slide-1 {
+      background-image: url("pic3.jpg");
+      }
+      .slide-2 {
+      background-image: url("pic4.jpg");
+      }
+      .slide-3 {
+      background-image: url("pic8.jpg");
+      }
+
+      .textareas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+      
+}
+

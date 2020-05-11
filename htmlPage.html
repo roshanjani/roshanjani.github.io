@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	 <link rel="stylesheet" href="web.css">
+	  <script  type="text/javascript" src="webScript.js"></script> 
+	  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+
+<div class="w3-content">
+ <img class="mySlides" src="HeaderImage.png" alt="custom_html_banner1" style="width:100%">
+  <img class="mySlides" src="Pics1.png" alt="custom_html_banner2" style="width:100%">
+ <!--<img class="mySlides" src="https://i.imgur.com/ZtdhrUA.jpg" alt="custom_html_banner3" style="width:100%">
+ <img class="mySlides" src="https://i.imgur.com/ZtdhrUA.jpg" alt="custom_html_banner4" style="width:100%"> -->
+ <!--  <video width="320" height="240" controls>
+  <source src="Video.mp4" type="video/mp4">
+  <source src="Video.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+ <video width="320" height="240" controls>
+  <source src="Video.mp4" type="video/mp4">
+  <source src="Video.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+<video width="320" height="240" controls>
+  <source src="Video.mp4" type="video/mp4">
+  <source src="Video.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+<video width="320" height="240" controls>
+  <source src="Video.mp4" type="video/mp4">
+  <source src="Video.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>  -->
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+ <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+<div class="slider-container">
+      <div class="menu">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+      </div>
+      <input id="slide-dot-1" type="radio" name="slides" checked>
+      <div class="slide slide-1"></div>
+      <input id="slide-dot-2" type="radio" name="slides">
+      <div class="slide slide-2"></div>
+      <input id="slide-dot-3" type="radio" name="slides">
+      <div class="slide slide-3"></div>
+    </div>
+<br>
+    <div class="w3-content" >
+    	<div id="textareas" align="center">
+    		<div>
+    	Email id:<input type="text" id="emailId"></input>	
+    </div>
+    <br>
+    	<textarea rows="4" cols="50" name="comment" form="usrform"  id="textAreaId">
+Enter text here...</textarea>
+<!-- <input type="button" value="submit" id="submitButton" onclick="sendEmail"> -->
+
+<form method="post">
+		<input type="button" value="Send Email" onclick="sendEmail()"/>
+	</form>
+    	</div>
+    	 <h6 align="center"> 	&copy;roshan jani</h6>
+    	</div>
+
+</body>
+
+
+<script type="text/javascript">
+	
+ function sendEmail() {
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username : "roshanjani51@gmail.com",
+				Password : "7829183274",
+				To : 'roshanjani8569@gmail.com',
+				From : "roshanjani51@gmail.com",
+				Subject : "mail test",
+				Body : "Hi",
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+</script>
+</html>
